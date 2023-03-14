@@ -37,7 +37,7 @@ param_grid_mlp = {
     'max_iter': [300, 500]
 }
 
-grid_mlp = GridSearchCV(MLPClassifier(), param_grid_mlp, verbose=1, cv=5 n_jobs=-1, scoring='accuracy')
+grid_mlp = GridSearchCV(MLPClassifier(), param_grid_mlp, verbose=1, cv=5, n_jobs=-1, scoring='accuracy')
 
 grid_mlp.fit(X_train_norm.values, y_train)
 
