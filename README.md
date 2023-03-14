@@ -1,4 +1,4 @@
-# Diagnóstico de PCOS (Síndrome de Ovários Policisticos)
+# Diagnóstico da PCOS (Síndrome dos Ovários Policísticos)
 
 **Dataset original**: https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos
 
@@ -9,5 +9,5 @@ Todos os dados foram coletados em 10 hospitais diferentes espalhados por **Keral
 <hr/>
 
 ## Objetivo
-Encontrar o melhor modelo de classificação para diagnosticar a síndrome dos ovários policisticos. Além disso, procuramos checar a viabilidade
+Encontrar o melhor modelo de classificação para diagnosticar a síndrome dos ovários policísticos. Além disso, procuramos checar a viabilidade
 de um modelo que seja capaz de prever se uma pessoa possui ou não a doença com um menor número de atributos preditores.
