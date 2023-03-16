@@ -6,13 +6,15 @@ import seaborn as sns
 from sklearn.utils.multiclass import unique_labels
 import math
 
-def plot_confusion_matrix(y_test, y_pred):
-    cm = metrics.confusion_matrix(y_test, y_pred)
+def plot_confusion_matrix(y_test, y_pred, percent=False):
+    cf_matrix = metrics.confusion_matrix(y_test, y_pred)
     classes = unique_labels(y_test, y_pred)
 
     fig, ax = plt.subplots(figsize=(4, 4))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Reds', cbar=False, ax=ax)
-
+    if percent:
+      sns.heatmap(cf_matrix/np.sum(cf_matrix), annot=True, fmt='.2%', cmap='Reds')
+    else:
+      sns.heatmap(cf_matrix, annot=True, fmt='d', cmap='Reds', cbar=False, ax=ax)
     ax.set_xlabel('Previsões')
     ax.set_ylabel('Valores reais')
     ax.set_xticklabels(classes, rotation=90)
