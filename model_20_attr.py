@@ -4,6 +4,7 @@ from scipy.stats import pearsonr
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
+import math
 
 data = pd.read_csv('PCOS.csv')
 data.dropna(inplace=True)
@@ -24,6 +25,9 @@ correlations = []
 for col in X.columns:
     corr, _ = pearsonr(X[col], y)
     correlations.append(corr)
+
+# obtendo o módulo dos coeficientes de correlação
+correlations = map(math.fabs, correlations)
 
 # criar um dicionário de features e seus coeficientes de correlação
 corr_dict = dict(zip(X.columns, correlations))
