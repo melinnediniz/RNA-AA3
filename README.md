@@ -1,4 +1,4 @@
-# PolyDetect: MLP-based System for PCOS Diagnosis
+# PolyDetect: MLP-based Diagnosis for PCOS
 
 **Dataset original**: https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos
 
