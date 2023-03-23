@@ -4,7 +4,7 @@
 
 **Autor**: Prasoon Kottarathil
 
-*O conjunto de dados contém todos os parâmetros físicos e clínicos para determinar a PCOS e problemas relacionados à infertilidade. 
+*O conjunto de dados contém parâmetros físicos e clínicos para determinar a PCOS e problemas relacionados à infertilidade. 
 Todos os dados foram coletados em 10 hospitais diferentes espalhados por* **Kerala, India**.
 
 
